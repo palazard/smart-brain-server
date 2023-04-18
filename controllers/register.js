@@ -10,7 +10,6 @@ const handleRegister = (req, res, db, bcrypt)=>{
             res.status(400).json("error processing data")
         } else {
             const password=hash;
-            console.log(hash); //to delete
             db.transaction(trx=>{
                 trx.insert({
                     hash: password,
