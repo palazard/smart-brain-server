@@ -6,7 +6,7 @@ const handleClarifyAPICall = (req, res) => {
 
     const stub = ClarifaiStub.grpc();
 
-    const PAT = '768170f1fdd14543b98d939545f7ad42';
+    const PAT = PAT_CLARIFAI;
     const USER_ID = 'palazard';       
     const APP_ID = 'facerecognitionbrain-001';
     const MODEL_ID = 'face-detection'; 
